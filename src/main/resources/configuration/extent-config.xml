@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- Report theme -->
+        <theme>standard</theme>
+
+        <!-- Document encoding -->
+        <encoding>UTF-8</encoding>
+
+        <!-- Protocol for script and stylesheets -->
+        <protocol>https</protocol>
+
+        <!-- Title of the document -->
+        <documentTitle>SauceDemo Website</documentTitle>
+
+        <!-- Report name - displayed at top-nav -->
+        <reportName>SauceDemo Website Report
+            <![CDATA[
+                <img src="logo/amazon-logo.png"/> <!-- Use a relative path or URL -->
+            ]]>
+        </reportName>
+
+        <!-- Location of charts in the test view -->
+        <testViewChartLocation>bottom</testViewChartLocation>
+
+        <!-- Custom JavaScript -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                    console.log("Custom JavaScript initialized.");
+                });
+            ]]>
+        </scripts>
+
+        <!-- Custom Styles -->
+        <styles>
+            <![CDATA[
+                .report-name { padding-left: 18px; }
+                .report-name > img {
+                    float: left;
+                    height: 90%;
+                    margin-left: 30px;
+                    margin-top: 3px;
+                    width: auto;
+                }
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>
